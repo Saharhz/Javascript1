@@ -1,4 +1,4 @@
-export const modules = [
+const modules = [
     { name: "html-css", displayName: "HTML/CSS" },
     { name: "javascript", displayName: "JavaScript" },
     { name: "browsers", displayName: "Browsers" },
@@ -9,7 +9,7 @@ export const modules = [
     { name: "project", displayName: "Project" },
   ];
   
-  export const classes = [
+  const classes = [
     {
       name: "class32",
       startDate: "23-3-2021",
@@ -42,7 +42,7 @@ export const modules = [
     },
   ];
   
-  export const students = [
+  const students = [
     { name: "Fede", class: "class33", gitHubName: "fedefu", graduated: false },
     { name: "Tjebbe", class: "class32", gitHubName: "Tjebbee", graduated: true },
     { name: "Rob", class: "class34", gitHubName: "robvk", graduated: false },
@@ -54,7 +54,7 @@ export const modules = [
     },
   ];
   
-  export const mentors = [
+  const mentors = [
     {
       name: "Stas",
       canTeach: ["javascript", "browsers", "using-apis"],
@@ -82,3 +82,6 @@ export const modules = [
       canTeach: ["browsers", "using-apis", "node"],
     },
   ];
+
+
+  module.exports = {modules, classes, students, mentors};

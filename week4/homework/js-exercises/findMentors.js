@@ -1,5 +1,7 @@
-import { modules, students, mentors, classes } from "./hyf.js";
+const { modules, students, mentors, classes } = require("./hyf.js");
 
+
+console.log(mentors);
 /**
  * Tjebbe would like help to get a list of possible mentors for a module.
  * Fill in this function that finds all the mentors that can teach the given module.
